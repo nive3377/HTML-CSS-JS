@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+java script 
+=======
+java script 
+>>>>>>> 85c451d (event management, random num gues,perfume project)

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Guess the number</title>
+</head>
+<body>
+    <div id="con1">
+        <img src="img1.jpg" alt="color image" width="100%" height="650">     
+         <div class="con2">
+       <!--<img src="OIP.jpg"  alt="number image"  width="100%" height="70%">-->
+        <h1> Guess the number within the  range 10</h1>
+        <lable> Enter a number</lable>
+        <input id="guessnumber">
+        <button onclick="check()">check</button> 
+        <p id="result"> your Right /Wrong</p>   
+        <p id="score">score:10</p>
+    </div> 
+</div> 
+
+    
+    <script>  
+    //selecting the input box ,paragraph
+    var guessnumber = document.getElementById("guessnumber")
+    var result = document.getElementById("result")
+    var randomnumber = Math.floor(Math.random()*10)+1 
+    var score = document.getElementById("score")
+    var totalscore = 10
+    function check()
+    {
+        var enterednumber = guessnumber.value //intut tag contains   values and  paragraph tag contain text content
+        if (randomnumber == enterednumber)
+    {
+        console.log("Right")
+        result.textContent= "Right"
+        alert("YOU WON.....")
+    }
+    else{ 
+        totalscore=totalscore - 1 
+        if( totalscore==0)
+        { alert("SORRY (*_*) YOU LOSS")}
+        score.textContent="score:"+ totalscore
+        result.textContent= "Wrong"
+    }
+    }
+    
+    </script>  
+</html>
+</body>

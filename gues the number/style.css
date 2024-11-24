@@ -1,0 +1,25 @@
+#con1{
+    position: relative;
+} 
+
+.con2{    
+    margin: 50px; 
+    position: absolute; 
+    top: 50px; 
+    left: 300px;;
+    padding: 70px;  
+
+    text-align: center;
+    background: whitesmoke;
+    opacity: 0.6;
+    border-radius: 20px;
+
+}  
+.con2.h1{ 
+    color: black; 
+    opacity: 1;
+} 
+.con2.button{
+    background-color: aqua;
+    color: black;
+}

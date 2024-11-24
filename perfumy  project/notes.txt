@@ -1,0 +1,12 @@
+li{
+    color: gray ; 
+    cursor: pointer;
+}
+li:hover{ 
+    color: white;
+}
+
+
+property HOVER -->  hover property is used to change the color of 
+ the selected list element which is in gray color into white color  
+ 
